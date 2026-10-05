@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  
+  <meta name="description" content="An educational PCB designed for the AGH Logic Unit research group that demonstrates fundamental processor architecture and real-time data flow using interactive hardware visualization.
+Project Overview The board allows physical tracing of signals between memory, registers, and the ALU. All operations are controlled manually via switches and push-buttons, with logic states visualized in real time across different functional blocks using LEDs.
+Key Functional Blocks Register File: Implemented as a 4x4 LED matrix representing four 4-bit registers, allowing direct observation of data distribution and manual pattern creation. ALU (Arithmetic Logic Unit): Asynchronous unit performing bitwise operations (AND, OR) on data fetched from selected source registers. Instruction &amp; Data Memory: LED indicators displaying current input configurations, opcodes, and final execution results. Manual Control Interface: Dedicated switches for data line inputs (DATA [3..0]), register selection (R SET, REG 0, REG 1), write triggers (WE), and asynchronous system reset (RST). Role: Schematic &amp; PCB Layout Design Organization: AGH Logic Unit Student Research Group ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Educational Processor PCB Board">
+<meta property="og:url" content="http://localhost:1313/posts/project1/">
+<meta property="og:site_name" content="Maciej Rogoż">
+<meta property="og:description" content="An educational PCB designed for the AGH Logic Unit research group that demonstrates fundamental processor architecture and real-time data flow using interactive hardware visualization.
+Project Overview The board allows physical tracing of signals between memory, registers, and the ALU. All operations are controlled manually via switches and push-buttons, with logic states visualized in real time across different functional blocks using LEDs.
+Key Functional Blocks Register File: Implemented as a 4x4 LED matrix representing four 4-bit registers, allowing direct observation of data distribution and manual pattern creation. ALU (Arithmetic Logic Unit): Asynchronous unit performing bitwise operations (AND, OR) on data fetched from selected source registers. Instruction &amp; Data Memory: LED indicators displaying current input configurations, opcodes, and final execution results. Manual Control Interface: Dedicated switches for data line inputs (DATA [3..0]), register selection (R SET, REG 0, REG 1), write triggers (WE), and asynchronous system reset (RST). Role: Schematic &amp; PCB Layout Design Organization: AGH Logic Unit Student Research Group ">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Educational Processor PCB Board">
+<meta name="twitter:description" content="An educational PCB designed for the AGH Logic Unit research group that demonstrates fundamental processor architecture and real-time data flow using interactive hardware visualization.
+Project Overview The board allows physical tracing of signals between memory, registers, and the ALU. All operations are controlled manually via switches and push-buttons, with logic states visualized in real time across different functional blocks using LEDs.
+Key Functional Blocks Register File: Implemented as a 4x4 LED matrix representing four 4-bit registers, allowing direct observation of data distribution and manual pattern creation. ALU (Arithmetic Logic Unit): Asynchronous unit performing bitwise operations (AND, OR) on data fetched from selected source registers. Instruction &amp; Data Memory: LED indicators displaying current input configurations, opcodes, and final execution results. Manual Control Interface: Dedicated switches for data line inputs (DATA [3..0]), register selection (R SET, REG 0, REG 1), write triggers (WE), and asynchronous system reset (RST). Role: Schematic &amp; PCB Layout Design Organization: AGH Logic Unit Student Research Group ">
+
+
+  
+
+  
+
+  <title>Educational Processor PCB Board</title>
+
+  
+  
+  
+
+  
+  
+  
+    
+    <link rel="stylesheet" href="/scss/style.5180e160989396a4d47611cfbdb2c450d3458f0ed287b094a5ddb2738c25d74e.css" integrity="sha256-UYDhYJiTlqTUdhHPvbLEUNNFjw7Sh7CUpd2yc4wl104=">
+  
+  
+  
+
+  
+  
+
+  
+</head>
+<body class="max-width mx-auto px3 ">
+  <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="return cactusScrollTop();" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/posts/">Projects</a></li><li><a href="/contact/">Contact</a></li></ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/posts/pcb_edu/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="cactusToggle('i-next');" onmouseout="cactusToggle('i-next');"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="return cactusScrollTop();"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="cactusToggle('i-top');" onmouseout="cactusToggle('i-top');"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="cactusToggle('i-share');" onmouseout="cactusToggle('i-share');" onclick="cactusToggle('share');return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&text=Educational%20Processor%20PCB%20Board"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&is_video=false&description=Educational%20Processor%20PCB%20Board"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Educational%20Processor%20PCB%20Board&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&name=Educational%20Processor%20PCB%20Board&description=An%20educational%20PCB%20designed%20for%20the%20AGH%20Logic%20Unit%20research%20group%20that%20demonstrates%20fundamental%20processor%20architecture%20and%20real-time%20data%20flow%20using%20interactive%20hardware%20visualization.%0aProject%20Overview%20The%20board%20allows%20physical%20tracing%20of%20signals%20between%20memory%2c%20registers%2c%20and%20the%20ALU.%20All%20operations%20are%20controlled%20manually%20via%20switches%20and%20push-buttons%2c%20with%20logic%20states%20visualized%20in%20real%20time%20across%20different%20functional%20blocks%20using%20LEDs.%0aKey%20Functional%20Blocks%20Register%20File%3a%20Implemented%20as%20a%204x4%20LED%20matrix%20representing%20four%204-bit%20registers%2c%20allowing%20direct%20observation%20of%20data%20distribution%20and%20manual%20pattern%20creation.%20ALU%20%28Arithmetic%20Logic%20Unit%29%3a%20Asynchronous%20unit%20performing%20bitwise%20operations%20%28AND%2c%20OR%29%20on%20data%20fetched%20from%20selected%20source%20registers.%20Instruction%20%26amp%3b%20Data%20Memory%3a%20LED%20indicators%20displaying%20current%20input%20configurations%2c%20opcodes%2c%20and%20final%20execution%20results.%20Manual%20Control%20Interface%3a%20Dedicated%20switches%20for%20data%20line%20inputs%20%28DATA%20%5b3..0%5d%29%2c%20register%20selection%20%28R%20SET%2c%20REG%200%2c%20REG%201%29%2c%20write%20triggers%20%28WE%29%2c%20and%20asynchronous%20system%20reset%20%28RST%29.%20Role%3a%20Schematic%20%26amp%3b%20PCB%20Layout%20Design%20Organization%3a%20AGH%20Logic%20Unit%20Student%20Research%20Group%20"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&t=Educational%20Processor%20PCB%20Board"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <li><a href="#key-functional-blocks">Key Functional Blocks</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+  </span>
+</div>
+
+  <div class="content index py4 ">
+    
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 class="posttitle p-name" itemprop="name headline">Educational Processor PCB Board</h1>
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Maciej Rogoż</span>
+      </span>
+      <div class="postdate"><time datetime="2026-01-01T00:00:00Z" class="dt-published" itemprop="datePublished">1 Jan 2026</time></div>
+      
+      <div class="article-tag">
+  <i class="fa-solid fa-tag"></i><a class="p-category" href="/tags/pcb-design/">pcb-design</a>, <a class="p-category" href="/tags/digital-logic/">digital-logic</a>, <a class="p-category" href="/tags/hardware/">hardware</a>, <a class="p-category" href="/tags/kicad/">kicad</a></div>
+    </div>
+  </header>
+  
+  <div class="content e-content" itemprop="articleBody">
+    <p>An educational PCB designed for the <strong>AGH Logic Unit</strong> research group that demonstrates fundamental processor architecture and real-time data flow using interactive hardware visualization.</p>
+<p><img src="/images/pcb_edu/PCB_EDU.png" alt="Educational PCB Board">
+</p>
+<h3 id="project-overview">Project Overview</h3>
+<p>The board allows physical tracing of signals between memory, registers, and the ALU. All operations are controlled manually via switches and push-buttons, with logic states visualized in real time across different functional blocks using LEDs.</p>
+<h3 id="key-functional-blocks">Key Functional Blocks</h3>
+<ul>
+<li><strong>Register File:</strong> Implemented as a 4x4 LED matrix representing four 4-bit registers, allowing direct observation of data distribution and manual pattern creation.</li>
+<li><strong>ALU (Arithmetic Logic Unit):</strong> Asynchronous unit performing bitwise operations (AND, OR) on data fetched from selected source registers.</li>
+<li><strong>Instruction &amp; Data Memory:</strong> LED indicators displaying current input configurations, opcodes, and final execution results.</li>
+<li><strong>Manual Control Interface:</strong> Dedicated switches for data line inputs (<code>DATA [3..0]</code>), register selection (<code>R SET</code>, <code>REG 0</code>, <code>REG 1</code>), write triggers (<code>WE</code>), and asynchronous system reset (<code>RST</code>).</li>
+</ul>
+<hr>
+<ul>
+<li><strong>Role:</strong> Schematic &amp; PCB Layout Design</li>
+<li><strong>Organization:</strong> AGH Logic Unit Student Research Group</li>
+</ul>
+
+  </div>
+</article>
+
+
+    <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/posts/">Projects</a></li><li><a href="/contact/">Contact</a></li></ul>
+    </div>
+
+    
+      <div id="toc-footer" style="display: none">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <li><a href="#key-functional-blocks">Key Functional Blocks</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&text=Educational%20Processor%20PCB%20Board"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&is_video=false&description=Educational%20Processor%20PCB%20Board"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Educational%20Processor%20PCB%20Board&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&title=Educational%20Processor%20PCB%20Board"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&name=Educational%20Processor%20PCB%20Board&description=An%20educational%20PCB%20designed%20for%20the%20AGH%20Logic%20Unit%20research%20group%20that%20demonstrates%20fundamental%20processor%20architecture%20and%20real-time%20data%20flow%20using%20interactive%20hardware%20visualization.%0aProject%20Overview%20The%20board%20allows%20physical%20tracing%20of%20signals%20between%20memory%2c%20registers%2c%20and%20the%20ALU.%20All%20operations%20are%20controlled%20manually%20via%20switches%20and%20push-buttons%2c%20with%20logic%20states%20visualized%20in%20real%20time%20across%20different%20functional%20blocks%20using%20LEDs.%0aKey%20Functional%20Blocks%20Register%20File%3a%20Implemented%20as%20a%204x4%20LED%20matrix%20representing%20four%204-bit%20registers%2c%20allowing%20direct%20observation%20of%20data%20distribution%20and%20manual%20pattern%20creation.%20ALU%20%28Arithmetic%20Logic%20Unit%29%3a%20Asynchronous%20unit%20performing%20bitwise%20operations%20%28AND%2c%20OR%29%20on%20data%20fetched%20from%20selected%20source%20registers.%20Instruction%20%26amp%3b%20Data%20Memory%3a%20LED%20indicators%20displaying%20current%20input%20configurations%2c%20opcodes%2c%20and%20final%20execution%20results.%20Manual%20Control%20Interface%3a%20Dedicated%20switches%20for%20data%20line%20inputs%20%28DATA%20%5b3..0%5d%29%2c%20register%20selection%20%28R%20SET%2c%20REG%200%2c%20REG%201%29%2c%20write%20triggers%20%28WE%29%2c%20and%20asynchronous%20system%20reset%20%28RST%29.%20Role%3a%20Schematic%20%26amp%3b%20PCB%20Layout%20Design%20Organization%3a%20AGH%20Logic%20Unit%20Student%20Research%20Group%20"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fproject1%2f&t=Educational%20Processor%20PCB%20Board"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <a id="menu" class="icon" href="#" onclick="cactusToggle('nav-footer');return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+      
+        <a id="toc" class="icon" href="#" onclick="cactusToggle('toc-footer');return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+      
+      <a id="share" class="icon" href="#" onclick="cactusToggle('share-footer');return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+      <a id="top" style="display:none" class="icon" href="#" onclick="return cactusScrollTop();"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    2026
+    Maciej Rogoż
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/posts/">Projects</a></li><li><a href="/contact/">Contact</a></li></ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+
+  
+<script>window.cactusI18n = {copyTip: "\"Copy to clipboard!\"", copied: "\"Copied!\""};</script>
+
+
+  
+  <script src="/js/main.db8cc9f2518a7ce9c6349893b6ffaaa94f192097d21d731fb769ebf8ae828987.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

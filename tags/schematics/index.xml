@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Schematics on Maciej Rogoż</title>
+		<link>http://localhost:1313/tags/schematics/</link>
+		<description>Recent content in Schematics on Maciej Rogoż</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/schematics/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>20W Single-Channel Solid-State Guitar Amplifier</title>
+				<link>http://localhost:1313/posts/amplifier/</link>
+				<pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/amplifier/</guid>
+				<description>&lt;p&gt;A 20W single-channel solid-state guitar amplifier engineered from circuit design to final enclosure fabrication.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;a href=&#34;http://localhost:1313/images/amplifier/amplifier_enclosure.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/amplifier/amplifier_enclosure.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;multifx v2 PCB&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;Fig. 1: Enclosed amplifier.&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Output Power:&lt;/strong&gt; 20W continuous power output.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Topology:&lt;/strong&gt; Single-channel solid-state (transistor) audio amplifier circuit.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Control Interface:&lt;/strong&gt; Analog Volume, Treble, Bass, and Gain controls.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>

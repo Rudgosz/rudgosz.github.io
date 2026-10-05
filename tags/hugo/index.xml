@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hugo on Maciej Rogoż</title>
+		<link>http://localhost:1313/tags/hugo/</link>
+		<description>Recent content in Hugo on Maciej Rogoż</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Personal Portfolio Website</title>
+				<link>http://localhost:1313/posts/project1/</link>
+				<pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/project1/</guid>
+				<description>&lt;p&gt;A minimal, ultra-fast personal portfolio built with Hugo static site generator and the Cactus theme.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast Performance:&lt;/strong&gt; Blazing fast loading speeds with static HTML generation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Minimal Design:&lt;/strong&gt; Responsive layout optimized for all screen sizes.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated Deployment:&lt;/strong&gt; Hosted for free on GitHub Pages using GitHub Actions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo Extended&lt;/li&gt;&#xA;&lt;li&gt;Dart Sass&lt;/li&gt;&#xA;&lt;li&gt;Markdown&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Source Code:&lt;/strong&gt; &lt;a href=&#34;https://github.com/yourusername/yourusername.github.io&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>
